@@ -109,9 +109,7 @@ const weaponsArray = [rope, knife, candlestick, dumbell, poison, axe, bat, troph
 
 // ITERATION 2
 function selectRandom(card_type) {
-	let num = Math.floor(Math.random() * Math.floor(card_type.length));
-
-	return card_type[num];
+	return card_type[Math.floor(Math.random() * card_type.length)];
 }
 
 function pickMystery() {
@@ -125,7 +123,7 @@ console.log(pickMystery());
 // ITERATION 3
 
 function revealMystery(envelope) {
-	return `${envelope.suspect.firstName} ${envelope.suspect.lastName} killed Mr. Boddy using the ${envelope.weapon.name} in room ${envelope.room.name}`;
+	return `${envelope.suspect.firstName} ${envelope.suspect.lastName} killed Mr. Boddy using the ${envelope.weapon.name} in the ${envelope.room.name}!`;
 }
 
 console.log(revealMystery(pickMystery()));
