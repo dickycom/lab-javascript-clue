@@ -1,5 +1,5 @@
 // ITERATION 1
-const mrGreen = {
+let mrGreen = {
 	firstName: 'Jacob',
 	lastName: 'Green',
 	occupation: 'Entrepreneur',
